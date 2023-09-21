@@ -1,23 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import Testimonio from './componentes/testimonio'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='contenedor-principal'>
+        <h1>Esto es lo que dicen nuestros alumnos Sobre mi polla</h1>
+      </div>
+      <Testimonio 
+      nombre='Emma Postion'
+      pais='Suecia'
+      cargo='Ingeniera de software'
+      empresa='Spotify'
+      imagen='2'
+      testimonio='Siempre he tenido problemas para aprender JavaScript. He tomado muchos cursos, pero el curso de freeCodeCamp fue el que se quedó. Estudiar JavaScript, así como estructuras de datos y algoritmos en freeCodeCamp me dio las habilidades y la confianza que necesitaba para conseguir el trabajo de mis sueños como ingeniero de software en Spotify.'
+      />
+      <Testimonio 
+      nombre='Shawn Wang'
+      pais='Singapur'
+      imagen='1'
+      cargo='Ingeniera de base de datos'
+      empresa='Amazon'
+      testimonio='Da miedo cambiar de carrera. Solo gané la confianza de que podía programar trabajando a través de los cientos de horas de lecciones gratuitas en freeCodeCamp. Dentro de un año tuve un trabajo de seis cifras como ingeniero de software. freeCodeCamp cambió mi vida.'
+      />
+      <Testimonio 
+      nombre='Sarah Chima'
+      pais='nigeria'
+      imagen='3'
+      cargo='Quality Asseurance'
+      empresa='CHeckDesk'
+      testimonio="FreeCodeCamp fue la puerta de entrada a mi carrera como desarrollador de software. El plan de estudios bien estructurado llevó mis conocimientos de programación de un nivel de principiante total a un nivel muy seguro. Era todo lo que necesitaba para conseguir mi primer trabajo de desarrollador en una empresa increíble."
+      />
     </div>
   );
 }
